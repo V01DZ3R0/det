@@ -4,7 +4,7 @@ int main()
 {
     int m;
     std::cout << "Enter matrix's rows" << std::endl;
-    std::cin >> m; // m rows & n columns
+    std::cin >> m; // m rows
     // детерминанта у НЕ квадратных матрицы нет по определению миша
     if (m <= 0)
         return 0;
