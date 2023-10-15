@@ -25,11 +25,6 @@ int main()
         return 0;
     }
     
-    int d1 = 1, d2 = 1;
-    for (int i = 0; i < m; i++)
-    {
-        d1 *= a[i][i];
-        d2 *= a[i][(m - 1) - i];
-    }
-    std::cout << "det:" << d1 - d2 << std::endl;
+    int det = (a[0][0] * a[1][1] * a[2][2] + a[1][0] * a[2][1] * a[0][2] + a[0][1] * a[1][2] * a[2][0]) - (a[0][2] * a[1][1] * a[2][0] + a[1][2] * a[2][1] * a[0][0] + a[0][1] * a[1][0] * a[2][2]);
+    std::cout << "det:" << det << std::endl;
 }
